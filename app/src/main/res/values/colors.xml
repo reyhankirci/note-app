@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_color_light_gray">#66000000</color>
+    <color name="bottom_nav_color">#D7D7D5</color>
+    <color name="main_yellow">#F0B632</color>
+    <color name="gray_light_1">#CDCDCD</color>
+
+</resources>

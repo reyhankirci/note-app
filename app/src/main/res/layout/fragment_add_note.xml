@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.note.ui.addnote.AddNoteViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/subjectEditText"
+            android:layout_width="362dp"
+            android:layout_height="232dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/subject"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/llCategory"
+            android:layout_width="349dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/subjectEditText"
+            app:layout_constraintStart_toStartOf="@+id/subjectEditText"
+            app:layout_constraintTop_toBottomOf="@+id/subjectEditText">
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="217dp"
+                android:layout_height="57dp"/>
+
+            <Button
+                android:id="@+id/buttonAddCat"
+                android:layout_width="115dp"
+                android:layout_height="57dp"
+                android:text="Add Category"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
